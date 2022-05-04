@@ -1,7 +1,4 @@
 <!-- Maurício -->
-<!-- Não consigo deixar o header como display grid para organizar os meus itens dentro do header usando grid, não queria usar o flexbox
-
-  R:  Falta a implementação de itens do grid (pode ser feito utilizando DIVS dentro do header) -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./imagens/Logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/cardapio.css">
     <title>Cardapio</title>
 </head>
@@ -26,8 +24,9 @@ body {
 
 h1{
     font-family: 'PlayfairDisplay', Times, serif;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: normal;
+    color: black;
 }
 
 p{
@@ -40,45 +39,44 @@ p{
 
 <body>
 
-    <div class="viewport">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="../saveur-patisserie-responsivo/imagens/Logo.png" alt="" width="60" height="60">
+                      </a>
+                    </div>
+                  </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><h1>Sobre Nós</h1></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><h1>Contato</h1></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><h1>Cardápio</h1></a>
+                  </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><h1>(41) 98828-2324 | 3054-4332</h1></a>
+                </span>
 
-        <div class="header">
+                <span class="nav-item">
+                    <a class="nav-link active"><h1>Rua Hermes Fontes - Batel</h1></a>
+                </span>
+              </div>
+            </div>
+          </nav>
 
-            <button class="home" onclick="window.location.href='index.html'">
-                <img src="../saveur-patisserie-responsivo/imagens/Logo.png" width="50px" height="60px"></button>
-        
-                <button class="sobreNos" onclick="window.location.href='sobreNos.html'"><h1>Sobre Nós</h1></button>
-        
-                <button class="contato" onclick="window.location.href='contato.html'"><h1>Contato</h1></button>
-        
-                <button class="cardapio" onclick="window.location.href='cardapio.html'"><h1>Cardápio</h1></button>
-        
-                <button class="telefone" onclick="window.location.href='#'">
-                    <img src="../saveur-patisserie-responsivo/imagens/iconeWhats.png" width="15px" height="15px" >
-                    <h1>(41) 98828-2324 | 3054-4332</h1>
-                </button>
-        
-                <button class="endereco" onclick="window.location.href='#'">
-                    <img src="../saveur-patisserie-responsivo/imagens/iconeLocal.png" width="15px" height="15px"  >
-                    <h1>Rua Hermes Fontes - Batel</h1>
-                </button>
-    
-        </div>
-        
-        <div class="titulo">
-            <h1 class="textoTitulo">CARDÁPIO</h1>
-        </div>
-
-        <button class="salgados" onclick="window.location.href='salgados.html'">
-            <h1 class="tituloBotoes">Salgados</h1>
-        </button>
-        
-        <button class="doces" onclick="window.location.href='doces.html'"><h1 class="tituloBotoes">Doces</h1></button>
-
-       <button class="bebidas" onclick="window.location.href='bebidas.html'"><h1 class="tituloBotoes">Bebidas</h1></button>
-
-        <div class="rodape"></div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 </body>
 </html>
