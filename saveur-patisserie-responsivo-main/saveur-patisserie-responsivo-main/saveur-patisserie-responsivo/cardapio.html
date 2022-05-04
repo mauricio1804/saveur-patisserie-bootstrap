@@ -1,0 +1,84 @@
+<!-- Maurício -->
+<!-- Não consigo deixar o header como display grid para organizar os meus itens dentro do header usando grid, não queria usar o flexbox
+
+  R:  Falta a implementação de itens do grid (pode ser feito utilizando DIVS dentro do header) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/Logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/cardapio.css">
+    <title>Cardapio</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'PlayfairDisplay';
+        src: url('fontes/PlayfairDisplay.ttf.ttf') format('truetype'), url('fontes/Inter.ttf.ttf') format('truetype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'PlayfairDisplay', Times, serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+p{
+    font-family: 'PlayfairDisplay', Times, serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+</style>
+
+<body>
+
+    <div class="viewport">
+
+        <div class="header">
+
+            <button class="home" onclick="window.location.href='index.html'">
+                <img src="../saveur-patisserie-responsivo/imagens/Logo.png" width="50px" height="60px"></button>
+        
+                <button class="sobreNos" onclick="window.location.href='sobreNos.html'"><h1>Sobre Nós</h1></button>
+        
+                <button class="contato" onclick="window.location.href='contato.html'"><h1>Contato</h1></button>
+        
+                <button class="cardapio" onclick="window.location.href='cardapio.html'"><h1>Cardápio</h1></button>
+        
+                <button class="telefone" onclick="window.location.href='#'">
+                    <img src="../saveur-patisserie-responsivo/imagens/iconeWhats.png" width="15px" height="15px" >
+                    <h1>(41) 98828-2324 | 3054-4332</h1>
+                </button>
+        
+                <button class="endereco" onclick="window.location.href='#'">
+                    <img src="../saveur-patisserie-responsivo/imagens/iconeLocal.png" width="15px" height="15px"  >
+                    <h1>Rua Hermes Fontes - Batel</h1>
+                </button>
+    
+        </div>
+        
+        <div class="titulo">
+            <h1 class="textoTitulo">CARDÁPIO</h1>
+        </div>
+
+        <button class="salgados" onclick="window.location.href='salgados.html'">
+            <h1 class="tituloBotoes">Salgados</h1>
+        </button>
+        
+        <button class="doces" onclick="window.location.href='doces.html'"><h1 class="tituloBotoes">Doces</h1></button>
+
+       <button class="bebidas" onclick="window.location.href='bebidas.html'"><h1 class="tituloBotoes">Bebidas</h1></button>
+
+        <div class="rodape"></div>
+    </div>
+    
+</body>
+</html>
