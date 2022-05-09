@@ -1,133 +1,16 @@
-/* Manu */
-.Conteiner{
-    /* background-color: aquamarine; */
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: 1fr 2fr 3% 2fr 3% 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: 10px;
-    grid-auto-flow: row;
-}
 
-/* ainda estamos arrumando o header */
-.header{
-    /* display: flex; */
-    background-color:rgb(0, 255, 128);
-    grid-column: 1/4;
-}
+@import "../node_modules/bootstrap/scss/functions";
 
-.ImagenPrincipal{
-     grid-column: 1/4;
-    grid-row: 2;
-    background-image: url(../imagens/principalSobreNoz.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y:center ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 30px; 
-    /* background-color:brown */
-}
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
 
- .DonoPadaria{
-    grid-column: 2/1;
-    grid-row: 4;
-    background-image: url(../imagens/donoPadariaSobreNos.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    background-position-y:center ; 
-    /* background-color: black; */
-} 
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
 
- .Paragrafo{
-    grid-column: 2/4;
-    grid-row: 4;
-    font-size: 60%;
-    text-align: justify;
-    margin-right: 3%; 
-    /* background-color: darkgreen; */
-} 
-
-.rodape{
-    /* background-color: black; */
-    background-image: url(../imagens/Logo.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    background-position-y:center ;
-    grid-column: 1/4;
-    grid-row: 6; 
-}
-
-img{
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-}
-
- .linha{
-    grid-column: 1/4; 
-    grid-row: 3;
-    /* background-color:blue; */
-}
-
-.linha2{
-    grid-column: 1/4; 
-    grid-row: 5;
-    /* background-color: hotpink; */
-} 
-
-@media (max-width: 800px){
-    .Conteiner{
-        grid-template-rows: 1fr 2fr 3% 20% 1fr 3% 7%;
-    }
-
-    .header{
-        grid-column: 1/4;
-        grid-row: 1;
-    }
-
-    .ImagenPrincipal{
-        grid-column: 1/4;
-        grid-row: 2;
-    }
-
-    .DonoPadaria{
-        grid-column: 2;
-        grid-row: 4;
-    }
-
-    .Paragrafo{
-        grid-column: 1/4;
-        grid-row: 5;
-        margin-left: 5%;
-        margin-right: 3%;
-    }
-
-    .linha{
-        grid-column: 1/4; 
-        grid-row: 3;
-    }
-
-    /* não consigo arrumar a linha, deixar ela na horizontal */
-    .linha2{
-        grid-column: 1/4; 
-        grid-row: 6;
-    }
-
-    .rodape{
-        grid-column: 1/4; 
-        grid-row: 7;
-    }
-}
-
-    @media (max-width: 505px){
-
-        .ImagenPrincipal{
-        text-align: center;
-        }
-}
+@import "../node_modules/bootstrap/scss/utilities/api";
