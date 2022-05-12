@@ -10,20 +10,14 @@ img{
 }
 
 .card-img{
-    height: 200px;
-    $card-height: 200px;
+    height: 320px;
 }
 
 .card-body{
     font-size: 10px;
     text-align: justify;
-    $card-spacer-y: 40px;
-}
-
-.img-fluid{
-    width: 1000px;
-    height: 500px;
-    padding: 50px;
+    padding-left: 20%;
+    padding-right: 10%;
 }
 
 .card{
@@ -33,4 +27,14 @@ img{
 .rounded{
     width: 80px;
     height: 80px;
+}
+
+.linha1{
+    height: 100px;
+}
+
+.img-fluid{
+    padding-left: 20px;
+    width: 100%;
+    padding-left: 30%;
 }
