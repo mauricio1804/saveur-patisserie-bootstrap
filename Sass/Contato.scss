@@ -3,8 +3,41 @@
 }
 
 .row{
-    font-size: 50%;
+    font-size: 70%;
     text-align: justify;
     margin-left: 2%;
 }
 
+img{
+    object-fit: cover;
+}
+
+.rounded{
+    width: 80px;
+    height: 80px;
+}
+
+.img-fluid{
+    max-width: 30%;
+}
+
+.p{
+    font-size: 10%;
+    text-align: center;
+}
+
+.pag{
+   font-size: 30px; 
+}
+
+.whats{
+    font-size: 20px; 
+}
+
+.insta{
+    font-size: 20px; 
+}
+
+.local{
+    font-size: 20px; 
+}
