@@ -6,7 +6,7 @@ img{
 .card-title{
     color: white;
     text-align: center;
-    font-size: 70px;
+    font-size: 65px;
 }
 
 .card-img{
@@ -24,7 +24,7 @@ img{
 
 .textoPrincipal{
     text-align: center;
-    background-color: black;
+    opacity: 0;
 }
 
 .rodape{
@@ -32,3 +32,21 @@ img{
     width: 75px;
 }
 
+.rounded{
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 425px){
+    .coxinhaInicial{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px){
+    .coxinhaInicial{
+        height: 200px;
+        width: 200px;
+    }
+}
