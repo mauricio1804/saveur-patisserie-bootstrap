@@ -1,3 +1,5 @@
+// Maurício
+
 img{
     object-fit: cover;
 }
@@ -14,6 +16,8 @@ img{
 
 .card-body{
     font-size: 10px;
+    text-align: justify;
+    $card-spacer-y: 40px;
 }
 
 .img-fluid{
